@@ -165,7 +165,6 @@ int skip_list_search(key_t key, value_t *value, skip_list_t* sl)
     prev = sl->header;
     cur = NULL;
 
-    /* first, find the insert position */
     int skip_list_level = sl->level;
     int l = skip_list_level - 1;
     for ( ; l >= 0; --l) {
