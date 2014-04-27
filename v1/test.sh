@@ -6,4 +6,4 @@ LAST=${3:-10}
 
 echo -e "TEST DATA INFO: from $FIRST to $LAST, increment is $INCR\n"
 
-a=""; for i in $(seq $FIRST $INCR $LAST); do a="$a $i";done;./test $a
+./test $(seq $FIRST $INCR $LAST)
